@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+.icon img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.icon {
+    width: 30%;
+}
+
+.combonav {
+    margin: 0;
+    text-align: right;
+    width: 70%;
+}
+
+.combonav nav {
+    margin: 7%;
+}
+
+.combonav nav a {
+    justify-content: space-around;
+    margin: 5%;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    color: black;
+
+}
+
+.combonav nav a:hover {
+    border: 1px solid black;
+    background: grey;
+    transition: 1s;
+}
+.medium{
+    display: flex;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+.africa {
+    padding-left: 10%;
+    width: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.africa h1{
+    font-size: 4vw;
+    padding-bottom: 2vw;
+}
+.africa h2{
+    font-size: 2vw;
+    padding-bottom: 1vw;
+}
+.africa p{
+    font-size: 1.5vw;
+    text-align: left;
+    padding-right: 15%;
+}
+
+.video {
+    padding-left: 10%;
+    display: flex;
+    width: 60%;
+
+}
+
+.video video {
+    position: absolute;
+    width: 39.7%;
+    height: 59.7%;
+    object-fit: cover;
+}
+
+.video img {
+    margin: -0.1%;
+    position: absolute;
+    mix-blend-mode: screen;
+    width: 40.2%;
+    height: 60%;
+}
+
+footer {
+    width: 100%;
+    margin-top: 35%;
+    margin-left: 0;
+    display: flex;
+    opacity: 0.7;
+    margin-bottom: 0;
+    background-color: #eaecf157;
+    height: 7vw;
+}
+
+
+.table {
+    padding-left: 5%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.table nav {
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.table nav a {
+    display: flex;
+    font-size: 1vw;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    width: 15vw;
+}
+
+.table nav a:hover {
+    color: red;
+}
+
+.info1 {
+    display: flex;
+}
+
+.info2 {
+    display: flex;
+    margin-top: 2%;
+}
+
+.socialmedia {
+    display: flex;
+}
+
+.socialmedia img {
+    margin-top: 70%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 1.4vw;
+    height: 1.4vw;
+}
+
+.socialmedia:hover {
+    color: red;
+}
+.object p i{
+    color: red;
+}
+.object {
+    padding-left: 0;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: flex;
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+    font-size: 1.4vw;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 1vw;
+    }
+    50% {
+      bottom: 3vw;
+    }
+  }
+
+  @media all and (max-width: 920px){
+    header{
+        display: inline-block;
+    }
+    .icon{
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 45%;
+        justify-items: center;
+        align-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .combonav{
+        display: block;
+        text-align: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 15vw;
+    }
+    .combonav nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .combonav nav a {
+       font-size: 4vw;
+        height: 5vw;
+    }
+
+    .medium{
+        display: inline-block;
+        width: 100%;
+    }
+    .africa{
+        padding: 0;
+        width: 100%;
+        height: 30vw;
+        margin-bottom: 10%;
+    }
+    .africa h1{
+        text-align: center;
+        font-size: 6vw;
+    }
+    .africa h2{
+        margin-top: 3%;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .africa p{
+        margin-top: 3%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 4vw;
+        padding: 0;
+    }
+    .video{
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 60%;
+    }
+    .video video{
+        margin: 0.15%;
+        width: 59.3%;
+        height: 50%;
+    }
+    .video img{
+        margin: -0.1%;
+        width: 60.3%;
+        height: 50.3%;
+    }
+
+    footer{
+        display: block;
+        padding: 0;
+        height: 80vw;
+    }
+    .table {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .table nav {
+        margin-top: 5%;
+        text-align: center;
+        display: block;
+        justify-content: center;
+
+    }
+
+    .table nav a {
+        padding: 2%;
+        display: block;
+        font-size: 4vw;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .table nav a:hover {
+        color: red;
+
+    }
+
+    .info1 {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .info2 {
+        margin-top: 0;
+        display: block;
+    }
+
+    .socialmedia {
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .socialmedia img {
+        margin-top: 5%;
+        height: 5vw;
+        width: 5vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10%;
+    }
+    .object{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .object p{
+        font-size: 4vw;
+
+    }
+  }
